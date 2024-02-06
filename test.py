@@ -21,7 +21,7 @@ class TestProcessList(unittest.TestCase):
     
     def test_float_input(self):
         with self.assertRaises(ValueError):
-            input_list = [1, 2, 2.5, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+            input_list = [1, 2, 2.0, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
             process_list(input_list)
 
 if __name__ == '__main__':
